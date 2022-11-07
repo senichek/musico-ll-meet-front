@@ -1,0 +1,40 @@
+@use '../../styles/vars';
+
+.footer__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 1rem 0 0.5rem;
+    gap: 2rem;
+    width: 100vw;
+    font-size: 0.8rem;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 40%, rgba(0,0,0,0) 100%);
+
+    &__link {
+        background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, rgba(255,255,255,1) 100%);
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        border: solid vars.$light-color 1px;
+        box-shadow: 0rem 0rem 1rem vars.$light-color;
+        text-align: center;
+        vertical-align: middle;
+
+
+        &__icon {
+            height: 70%;
+            transform: translateY(0.3rem);
+        }
+    }
+}
+
+//responsive small screen
+@media screen and (max-width: 768px){
+    .footer__nav {
+        display: none;
+    }
+}

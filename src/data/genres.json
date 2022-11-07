@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Rock (Métal, punk, grunge,...)"
+    },
+    {
+        "id": 2,
+        "name": "Pop"
+    },
+    {
+        "id": 3,
+        "name": "Electro"
+    },
+    {
+        "id": 4,
+        "name": "Latino"
+    },
+    {
+        "id": 5,
+        "name": "Reggae"
+    },
+    {
+        "id": 6,
+        "name": "Folk"
+    },
+    {
+        "id": 7,
+        "name": "Chanson Française"
+    },
+    {
+        "id": 8,
+        "name": "Rap/Hip-hop"
+    },
+    {
+        "id": 9,
+        "name": "Blues/Jazz"
+    },
+    {
+        "id": 10,
+        "name": "Country"
+    },
+    {
+        "id": 11,
+        "name": "Classique"
+    },
+    {
+        "id": 12,
+        "name": "Musiques du monde (musique régionales, Raï,...)"
+    }
+]

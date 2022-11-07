@@ -1,0 +1,190 @@
+@use 'reset';
+@use 'vars';
+// import des polices depuis Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chango&display=swap');
+
+
+body {
+    background: vars.$left-color-gradient;
+    background: linear-gradient(166deg, vars.$left-color-gradient 5%, vars.$center-color-gradient 55%, vars.$right-color-gradient 95%);
+    background-attachment: fixed;
+    height: 100vh;
+    width: 80%;
+    max-width: 1500px;
+    margin: 0 auto;
+    color: vars.$light-color;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+};
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Chango', cursive;
+    font-size: 2rem;
+    margin: 1rem 0;
+    word-break: break-word;
+};
+
+.button {
+    color: vars.$dark-color;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgba(255, 255, 255, 0.5) ;
+    padding: 0.5rem;
+    min-width: 8rem;
+    border-radius: 5rem;
+    box-shadow: 0.3rem 0.3rem 1rem vars.$dark-color;
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 1rem auto;
+    text-align: center;
+    transition:all .5s ease-in-out;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+};
+
+input {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+
+.foot {
+    height: 10rem;
+}
+
+.title-page {
+    padding: 1rem;
+    text-align: center;
+    text-shadow: 0.3rem 0.3rem 1rem vars.$dark-color;
+}
+
+
+
+
+
+//***** style des pages détail *****
+.details {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid vars.$light-color;
+    box-shadow: 0 0 5rem vars.$light-color;
+    border-radius: 2rem;
+    max-width: 1300px;
+    min-height: 80vh;
+    margin: 2rem auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    & strong{
+        font-weight: bold;
+    }
+
+    &__name {
+        text-align: center;
+        padding: 1rem 2rem;
+        background: rgba(0, 0, 0, 0.8);
+        border-radius: 2rem;
+    }
+
+    &__picture {
+        display: none;
+    }
+
+    &__infos {
+        width: 50%;
+        min-width: 300px;
+        padding: 2rem;
+        color: vars.$dark-color;
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 2rem;
+        box-shadow: 0.3rem 0.3rem 1rem vars.$dark-color;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__candidate {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        &__status {
+
+            &-Acc {
+                background-color: rgb(51, 167, 5);
+                padding: 0.2rem 0.5rem;
+                border-radius: 10px;
+            }
+            &-Acceptée {
+                background-color: rgb(51, 167, 5);
+                padding: 0.2rem 0.5rem;
+                border-radius: 10px;
+            }
+            &-Ref {
+                background-color: rgb(202, 0, 0);
+                padding: 0.2rem 0.5rem;
+                border-radius: 10px;
+            }
+            &-Refusée {
+                background-color: rgb(202, 0, 0);
+                padding: 0.2rem 0.5rem;
+                border-radius: 10px;
+            }
+            &-En {
+                background-color: #e9d717;
+                padding: 0.2rem 0.5rem;
+                border-radius: 10px;
+            }
+        }
+    }
+
+    &__actions {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+//responsive small screen
+@media screen and (max-width: 768px){
+    .details {
+
+
+        &__name {
+            border-radius: 2rem 2rem 0 0;
+            background: vars.$dark-color;
+        }
+
+        &__picture {
+            display: initial;
+            max-width: 100%;
+            height: auto;
+            max-height: 30rem;
+        }
+
+        &__infos {
+            width: 100%;
+            background: vars.$light-color;
+            border-radius: 0 0 2rem 2rem;
+            box-shadow: none;
+        }
+
+        &__actions {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}

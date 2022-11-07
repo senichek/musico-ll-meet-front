@@ -1,0 +1,53 @@
+@use '../../styles/vars';
+
+.page-404 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+
+
+    &__message {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-weight: bold;
+        gap: 1rem;
+        text-shadow: 0rem 0rem 2rem vars.$dark-color;
+    }
+
+    &__picture {
+        position: absolute;
+        z-index: -10;
+        width: 80%;
+        max-width: 700px;
+        bottom: 3rem;
+
+        & img {
+            width: 100%;
+            height: auto;
+            
+        }
+    }
+}
+
+.returnButton {
+    text-align: center;
+    text-shadow: none;
+    line-height: 1.5rem;
+    color: vars.$dark-color;
+    margin-top: 2rem;
+    padding: 1rem;
+    width: 125px;
+    border: 2px solid vars.$light-color;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.5) ;
+    box-shadow: 0rem 0rem 3rem vars.$light-color;
+    transition:all .5s ease-in-out;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}

@@ -1,0 +1,32 @@
+@use '../../styles/vars';
+
+.my-ad {
+    margin: 1rem;
+    padding: 1rem;
+    width: 280px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: vars.$dark-color;
+    border-radius: 1rem;
+    box-shadow: 0.3rem 0.3rem 1rem vars.$dark-color;
+    text-align: center;
+    transition:all .5s ease-in-out;
+
+    &__picture {
+        width: 100%;
+        height: auto;
+        border-radius: 1rem;
+    }
+
+    &__isArchived {
+        opacity: 50%;
+    }
+
+    &__archived {
+        font-weight: bold;
+        color: rgb(197, 0, 0);
+    }
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}

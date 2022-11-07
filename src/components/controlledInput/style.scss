@@ -1,0 +1,15 @@
+@use '../../styles/vars';
+
+.input_field {
+    margin: 1rem;
+}
+
+input {
+    padding: 1rem;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.5) ;
+    border-radius: 1rem;
+    border: solid vars.$light-color 1px;
+    box-shadow: 0rem 0rem 3rem vars.$light-color;
+    font-size: 1rem;
+}

@@ -1,0 +1,42 @@
+@use '../../styles/vars';
+
+.upload {
+    position: absolute;
+    transform: translateX(-2rem) translateY(-15rem);
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1rem;
+    width: 280px;
+    background-color: vars.$light-color;
+    color: vars.$dark-color;
+    border-radius: 1rem;
+    box-shadow: 0.3rem 0.3rem 1rem vars.$dark-color;
+    text-align: center;
+
+    &__preview {
+        width: 250px;
+        height: auto;
+        border-radius: 1rem;height: auto;
+
+    }
+
+    &__select {
+        width: 9.7rem;
+    }
+}
+
+.closeMenu {
+    text-align: right;
+    margin-top: -1rem;
+    margin-right: -3rem;
+    width: 100%;
+
+    &__X {
+        color: vars.$dark-color;
+        border: none;
+        background: transparent;
+        font-size: 3rem;
+        transform: rotate(45deg);
+    }
+}

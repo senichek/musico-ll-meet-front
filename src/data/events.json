@@ -1,0 +1,53 @@
+[
+  {
+    "id": 3,
+    "name": "Event_1",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    "picture_url": "https://images.pexels.com/photos/625644/pexels-photo-625644.jpeg",
+    "address": "Lyon, 45 rue de France",
+    "county": "France",
+    "is_published": true,
+    "is_archived": false,
+    "event_date": "2022-10-15 10:10:10.555555-05:00",
+    "external_link": "www.event.com",
+    "event_type": "festival",
+    "type_of_music_needed": "Not needed",
+    "owner_id": 1,
+    "created_at": "2022-08-22 10:10:10.555555-05:00",
+    "updated_at": ""
+  },
+  {
+    "id": 4,
+    "name": "Event_2",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    "picture_url": "https://images.pexels.com/photos/625644/pexels-photo-625644.jpeg",
+    "address": "Lyon, 45 rue de France",
+    "county": "France",
+    "is_published": true,
+    "is_archived": false,
+    "event_date": "2022-10-15 10:10:10.555555-05:00",
+    "external_link": "www.event.com",
+    "event_type": "festival",
+    "type_of_music_needed": "Not needed",
+    "owner_id": 1,
+    "created_at": "2022-08-22 10:10:10.555555-05:00",
+    "updated_at": ""
+  },
+  {
+    "id": 5,
+    "name": "Event_3",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    "picture_url": "https://images.pexels.com/photos/625644/pexels-photo-625644.jpeg",
+    "address": "Lyon, 45 rue de France",
+    "county": "France",
+    "is_published": true,
+    "is_archived": false,
+    "event_date": "2022-10-15 10:10:10.555555-05:00",
+    "external_link": "www.event.com",
+    "event_type": "festival",
+    "type_of_music_needed": "Not needed",
+    "owner_id": 1,
+    "created_at": "2022-08-22 10:10:10.555555-05:00",
+    "updated_at": ""
+  }
+]

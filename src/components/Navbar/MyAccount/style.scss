@@ -1,0 +1,97 @@
+@use '../../../styles/vars';
+
+.my-account {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-left: 0;
+
+    &__btn {
+        cursor: pointer;
+    }
+
+    &__list {
+        position: absolute;
+        transform: translateY(2rem) translateX(-5.5rem);
+        z-index: 15;
+        height: 15rem;
+        width: 280px;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+        background-color: vars.$light-color;
+        color: vars.$dark-color;
+        border-radius: 1rem;
+        box-shadow: 0.3rem 0.3rem 1rem vars.$dark-color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        &__item__role {
+            display: flex;
+            flex-direction: row;
+        }
+
+        & a {
+            transition:all .4s ease-in-out;
+
+            &:hover {
+                letter-spacing: 0.2rem;
+            }
+        }
+
+    }
+
+    &__signout {
+        color: vars.$dark-color;
+        background-color: rgba(255, 255, 255, 0.5) ;
+        padding: 0.5rem;
+        margin-top: 2rem;
+        min-width: 8rem;
+        border-radius: 5rem;
+        box-shadow: 0.3rem 0.3rem 1rem vars.$dark-color;
+        transition:all .5s ease-in-out;
+        transform: translateY(2rem);
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+// animation des liens au survole sur desktop
+@media screen and (min-width:768px) {
+    .my-account > a::after {
+        display: block;
+        content: '';
+        width: 0;
+        height: 1px;
+        background: vars.$light-color;
+        transition: width 0.4s;
+    }
+
+    .my-account > a:hover::after {
+        width: 100%;
+    }
+
+}
+
+//responsive small screen
+@media screen and (max-width: 768px){
+    .my-account {
+
+        &__btn {
+            font-size: 2rem;
+            transition:all .4s ease-in-out;
+    
+            &:hover {
+                letter-spacing: 0.5rem;
+            }
+    
+        }
+
+        &__list {
+            transform: translateX(-2.5rem) translateY(-12rem);
+        }
+    }
+}

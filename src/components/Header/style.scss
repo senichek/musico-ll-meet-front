@@ -1,0 +1,33 @@
+@use '../../styles/vars';
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 8rem;
+
+    &-logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        text-shadow: 0.3rem 0.3rem 1rem vars.$dark-color;
+
+        &-image {
+            height: 6.5rem;
+            margin: -0.6rem 1rem;
+        }
+
+        &-title {
+            margin-top: -0.3rem;
+        }
+
+        &-subtitle {
+            margin: 0 1rem;
+            font-size: 0.5rem;
+            letter-spacing: 0.2rem;
+        }
+    }
+}
+

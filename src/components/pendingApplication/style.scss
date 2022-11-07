@@ -1,0 +1,49 @@
+@use '../../styles/vars';
+
+.pending-application {
+    margin: 1rem;
+    padding: 1rem;
+    width: 280px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: vars.$dark-color;
+    border-radius: 1rem;
+    box-shadow: 0.3rem 0.3rem 1rem vars.$dark-color;
+    text-align: center;
+    transition:all .5s ease-in-out;
+
+    &__picture {
+        max-width: 100%;
+        height: auto;
+        max-height: 12rem;
+        border-radius: 1rem;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+
+    &__header {
+        text-align: center;
+    }
+
+    &__title {
+        text-align: center;
+    }
+
+    
+
+    &__description {
+        text-align: center;
+    }
+
+    &__status {
+        text-align: center;
+    }
+
+    &__status-name {
+        font-weight: bold;
+        font-size: large;
+        text-align: center;
+    }
+}

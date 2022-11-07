@@ -1,0 +1,38 @@
+@use '../../styles/vars';
+
+.home-page {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 3rem;
+    gap: 2rem;
+}
+
+.card {
+    margin: 1rem;
+    padding: 1rem;
+    width: 280px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: vars.$dark-color;
+    border-radius: 1rem;
+    box-shadow: 0.3rem 0.3rem 1rem vars.$dark-color;
+    text-align: center;
+    transition:all .5s ease-in-out;
+
+    &__picture {
+        width: 100%;
+        height: auto;
+        border-radius: 1rem;
+    }
+
+    &__info {
+        margin-top: 1rem;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}

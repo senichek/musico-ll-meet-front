@@ -1,0 +1,81 @@
+@use '../../styles/vars';
+
+.pending-application-page {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+    width: 100%;
+    gap: 2rem;
+}
+
+.pending-application-details {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    text-align: center;
+    justify-content: space-between;
+
+    &__poster {
+        margin-top: -5rem;
+        width: 45%;
+    }
+
+    &__picture {
+        width: 100%;
+        height: auto;
+        border-radius: 2rem;
+    }
+
+    &__name {
+        color: vars.$light-color;
+        padding: 1rem 0 2rem;
+        background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 50%);;
+        transform: translateY(5rem);
+        border-radius: 2rem 2rem 0 0 ;
+    }
+
+    &__infos {
+        width: 45%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        margin: 0;
+        padding: 2rem;
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 2rem;
+        box-shadow: 0.3rem 0.3rem 1rem vars.$dark-color;
+    }
+
+    &__actions {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 1rem;
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 2rem;
+        box-shadow: 0.3rem 0.3rem 1rem vars.$dark-color;
+
+    }
+}
+
+//responsive small screen
+@media screen and (max-width: 768px){
+    .pending-application-details {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        &__poster {
+            width: 100%;
+        }
+
+        &__infos {
+            width: 100%;
+        }
+    }
+}
+    

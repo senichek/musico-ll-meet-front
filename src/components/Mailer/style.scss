@@ -1,0 +1,43 @@
+@use '../../styles/vars';
+
+.contact {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 2rem;
+
+    &__header {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+
+        &__field {
+            margin: 2rem 0;
+            line-height: 2rem;
+        }
+    }
+
+    &__message textarea{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1rem;
+        padding: 1rem;
+        background-color: rgba(255, 255, 255, 0.5) ;
+        border-radius: 1rem;
+        border: solid vars.$light-color 1px;
+        box-shadow: 0rem 0rem 3rem vars.$light-color;
+        margin: 2rem 0;
+        width: 100%;
+        min-height: 15rem;
+        word-break: break-word;
+        resize: none;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .contact__header {
+        flex-direction: column;
+    }
+    
+}

@@ -1,0 +1,119 @@
+@use '../../styles/vars';
+
+.personal-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    margin: auto;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 1rem;
+    box-shadow: 0.3rem 0.3rem 1rem vars.$dark-color;
+    text-align: center;
+    margin-top: 2rem;
+
+    &__identity {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding: 2rem;
+    }
+
+    &__picture__img {
+        width: 20%;
+        min-width: 160px;
+        max-width: 250px;
+        height: auto;
+        border-radius: 1rem;
+    }
+
+    &__details-container {
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__part-one {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: start;
+    }
+
+    &__part-two {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: start;
+    }
+
+    &__bio-title h3{
+        font-size: 1.5rem;
+    }
+
+    &__bio-text {
+        text-align: justify;
+    }
+
+    &__action {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    &__name {
+        font-weight: bold;
+        margin-right: 1rem;
+    }
+}
+
+.delete-account {
+    &__text {
+        color: red;
+        font-weight: bold;
+    }
+    
+}
+
+
+//responsive small screen
+@media screen and (max-width: 768px){
+    .personal-profile {
+
+        &__identity {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        &__details-container {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        &__part-one  {
+            text-align: center;
+            width: 100%;
+            gap: 0.8rem;
+        }
+
+        &__part-two {
+            text-align: center;
+            width: 100%;
+            gap: 0.8rem;
+        }
+
+        &__action {
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            gap: 1rem;
+        }
+    }
+}

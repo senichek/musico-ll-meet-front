@@ -1,0 +1,62 @@
+@use '../../styles/vars';
+
+.about {
+
+    &__intro {
+        text-align: center;
+        line-height: 1.5rem;
+
+        & strong {
+            font-weight: bold;
+        }
+
+        & h2{
+            margin: 2rem 0;
+        }
+    }
+
+    &__team {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        &__card {
+            display: flex;
+            flex-direction: column;
+            margin: 1rem;
+            padding: 1rem;
+            width: 280px;
+            background-color: rgba(255, 255, 255, 0.5);
+            color: vars.$dark-color;
+            border-radius: 1rem;
+            box-shadow: 0.3rem 0.3rem 1rem vars.$dark-color;
+            text-align: center;
+            justify-content: space-between;
+            gap: 1rem;
+            transition:all .5s ease-in-out;
+
+            &__picture img{
+                width: 100%;
+                height: auto;
+                border-radius: 1rem;
+            }
+
+            &__social {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: flex-end;
+                width: 100%;
+
+                & img {
+                    height: 2rem;
+                }
+            }
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}

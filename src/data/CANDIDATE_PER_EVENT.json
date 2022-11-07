@@ -1,0 +1,63 @@
+[
+  {
+    "id": 3,
+    "name": "Event_1",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    "picture_url": "https://images.pexels.com/photos/625644/pexels-photo-625644.jpeg",
+    "address": "Lyon, 45 rue de France",
+    "county": "France",
+    "is_published": true,
+    "is_archived": false,
+    "event_date": "2022-10-15 10:10:10.555555-05:00",
+    "external_link": "www.event.com",
+    "event_type": "festival",
+    "type_of_music_needed": "Not needed",
+    "owner_id": 1,
+    "created_at": "2022-08-22 10:10:10.555555-05:00",
+    "updated_at": "",
+    "candidatures": [
+      {
+        "id": 2,
+        "name": "Musico_1",
+        "picture_url": "https://images.pexels.com/photos/210887/pexels-photo-210887.jpeg",
+        "city": "Paris",
+        "email": "musico1@gmail.com",
+        "password": "$2a$12$hLsi5w7Zf3VR/WF9KcRZeO/WCATFMNPuUF6Lv.r/xBZ5ChS7579DW",
+        "phone": "06311226122",
+        "address": "27 av. de Paris",
+        "county": "France",
+        "role": "musico",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "musicians_number": "4",
+        "group_leader": "Jack",
+        "external_url": "facebook.com",
+        "momer_to_contact": "",
+        "musical_type_id": "Pop",
+        "momer_type_id": "",
+        "created_at": "2017-02-27 10:10:10.555555-05:00",
+        "updated_at": ""
+      },
+      {
+        "id": 120,
+        "name": "Musico_2",
+        "picture_url": "https://images.pexels.com/photos/5648435/pexels-photo-5648435.jpeg",
+        "city": "Lyon",
+        "email": "musico2@gmail.com",
+        "password": "$2a$12$hLsi5w7Zf3VR/WF9KcRZeO/WCATFMNPuUF6Lv.r/xBZ5ChS7579DW",
+        "phone": "06311999155",
+        "address": "av. de Lyon",
+        "county": "France",
+        "role": "momer",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "musicians_number": "3",
+        "group_leader": "Jack",
+        "external_url": "facebook.com",
+        "momer_to_contact": "",
+        "musical_type_id": "Rock",
+        "momer_type_id": "",
+        "created_at": "2019-06-27 10:10:10.555555-05:00",
+        "updated_at": ""
+      }
+    ]
+  }
+]

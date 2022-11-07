@@ -1,0 +1,207 @@
+@use '../../styles/vars';
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 3rem;
+    min-height: 60vh;
+    text-align: justify;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-top: 2rem;
+
+    & strong {
+        font-weight: bold;
+    }
+
+    &__intro{
+        text-align: center;
+
+        &__title {
+            font-size: 1.5rem;
+        
+            & h2{
+                font-size: 4rem;
+                line-height: 4rem;
+            }
+        }
+
+        &__text {
+            text-align: justify;
+            margin: 2rem;
+        }
+    }
+
+    &__events {
+        background-image: url('https://images.pexels.com/photos/2728555/pexels-photo-2728555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+        padding: 5rem;
+        min-height: 50%;
+        border-radius: 2rem;
+        gap: 2rem;
+
+        &__infos {
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 1rem;
+            padding: 1rem;
+        }
+
+        &__button {
+            color: vars.$dark-color;
+            background-color: vars.$light-color ;
+            padding: 0.5rem;
+            min-width: 8rem;
+            border-radius: 5rem;
+            box-shadow: 0.3rem 0.3rem 1rem vars.$dark-color;
+            font-weight: 400;
+            font-size: 1rem;
+            transition:all .5s ease-in-out;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        &__infos {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    &__type {
+
+        &__section {
+            
+            margin: 1rem;
+
+            &__musicos {
+                background-image: url(https://images.pexels.com/photos/8512603/pexels-photo-8512603.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+                background-size: cover;
+                border-radius: 2rem;
+                width: 100%;
+                padding: 1rem;
+                margin-bottom: 4rem;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+            }
+
+            &__momers {
+                background-image: url(https://images.pexels.com/photos/3783524/pexels-photo-3783524.jpeg?auto=compress&cs=tinysrgb&w=1600);
+                background-size: cover;
+                border-radius: 2rem;
+                width: 100%;
+                padding: 1rem;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+            }
+        }
+
+        &__musicos {
+            margin: 1rem;
+            padding: 3rem;
+            display: flex;
+            flex-direction: column;
+            width: 33%;
+            min-width: 280px;
+            height: auto;
+            justify-content: space-between;
+            background-color: rgba(255, 255, 255, 0.9);
+            color: vars.$dark-color;
+            border-radius: 1rem;
+
+            & h3 {
+                color: vars.$dark-color;
+                text-align: center;
+            }
+        }
+
+        &__momers {
+            margin: 1rem;
+            padding: 3rem;
+            display: flex;
+            flex-direction: column;
+            width: 33%;
+            min-width: 280px;
+            height: auto;
+            justify-content: space-between;
+            background-color: rgba(255, 255, 255, 0.9);
+            color: vars.$dark-color;
+            border-radius: 1rem;
+
+            & h3 {
+                color: vars.$dark-color;
+                text-align: center;
+            }
+        }
+
+    }    
+}
+
+//responsive small screen
+@media screen and (max-width: 768px){
+
+    .welcome {
+        flex-direction: column;
+        align-items: center;
+        font-size: 1rem;
+        line-height: 1.4rem;
+
+        &__intro__title {
+            font-size: 1.2rem;
+
+            & h2 {
+                font-size: 2rem;
+                line-height: 2rem;
+            }
+        }
+
+        &__events {
+            background: none;
+            padding: 0;
+        }
+
+        &__type {
+
+            &__section {
+
+                &__musicos {
+                    background: none;
+                    padding: 0;
+                    margin-bottom: 1rem;
+                }
+
+                &__momers {
+                    background: none;
+                    padding: 0;
+                }
+            }
+
+            &__musicos {
+                width: 100%;
+                padding: 1rem;
+                background-color: rgba(255, 255, 255, 0.5);
+                
+            }
+
+            &__momers {
+                width: 100%;
+                padding: 1rem;
+                background-color: rgba(255, 255, 255, 0.5);
+            }
+        }
+        
+        
+
+
+    }
+}

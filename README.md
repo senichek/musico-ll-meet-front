@@ -1,70 +1,21 @@
-# Getting Started with Create React App
+<h2 align=center>MusicO'll Meet</h2>
+<img src="./public/mom.png" alt="screenshot_of_app" width="100%" height="auto" style="border-radius:15px">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<a href="https://polite-digestion.surge.sh">https://polite-digestion.surge.sh</a>
+<br>
+<br>
+<p><b>IMPORTANT:</b> disable AdBlock before testing the app.</p>
 
-## Available Scripts
+<p>It is a platform that aims to promote the organization of musical events, by facilitating the contact of musicians or groups (the Musicos) and the organizers (the MoMers). This app is a collaborative effort. I worked with 3 other studens of the school "O'Clock".</p>
+<p>Here is how it works:</p>
+<ul>
+    <li>The organizer creates an announcement;</li>
+    <li>The musicians can apply (submit their candidature);</li>
+    <li>The organizer can review the submission to accept or refuse  it;</li>
+    <li>The organizer can finalize the announcement to turn it into an event after all of of the submissions have been reviewed.</li>
+</ul>
+<p>All the users have the possibility to update their profile information, upload pictures, filter the events and delete their profile. The authentication is done using JWT.</p>
 
-In the project directory, you can run:
+<p><b>Stack:</b> Node.js Express, Postgres, Cloudinary, React, HTML, CSS.</p>
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p><b>Backend repository:</b> <a href="https://github.com/senichek/musico-ll-meet-back">https://github.com/senichek/musico-ll-meet-back</a></p>

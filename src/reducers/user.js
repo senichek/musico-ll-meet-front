@@ -36,7 +36,8 @@ const userReducer = (state = initialState, action = {}) => {
             name: action.payload.name,
             token: action.payload.token,
             id: action.payload.id,
-            role: action.payload.role
+            role: action.payload.role,
+            showSignUpSuccessMessage: false
         };
     case SIGN_UP_SUCCESS:
         return {
